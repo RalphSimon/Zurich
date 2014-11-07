@@ -3,14 +3,12 @@ $font-url--google   : "http://fonts.googleapis.com/css?family=Roboto+Slab:400,30
 $roboto-slab        : "Roboto Slab", $georgia;
 $rubik-mono-one     : "Rubik Mono One", $helvetica;
 
-$brand              : $rubik-mono-one;
-
 $sans-serif         : $helvetica;
 $serif              : $georgia;
 $slab               : $roboto-slab;
 $base-font-family   : $slab;
 $header-font-family : $base-font-family;
-
+$brand-font-family  : $rubik-mono-one;
 
 // Font Sizes
 $base-font-size : 1em;
@@ -39,8 +37,8 @@ $base-spacing       : $base-line-height * 1em;
 $base-z-index       : 0;
 
 // Colors
-$orange-roughy: #D35B13;
-$irish-coffee: #533421;
+$raw-sienna: #D4773D;
+$jugde-gray: #543F32;
 $di-serria: #DA8755;
 $iron: #E1E4E5;
 $cod-gray: #1A1A1A;
@@ -53,12 +51,31 @@ $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 
+// Gray Scale
+
+$color-palettes: (
+	grey: (
+		xx-light : lighten($iron, 43%),
+		x-light  : lighten($iron, 35%),
+	    light    : lighten($iron, 12%),
+	    base     : $iron,
+	 	dark     : darken($iron, 8%),
+	 	x-dark   : darken($iron, 16%),
+	 	xx-dark  : darken($iron, 24%)
+	),
+	black: (
+		light    : lighten($cod-gray, 10%),
+		base     : $cod-gray,
+		dark     : darken($cod-gray, 10%)
+	)
+);
+
 // Background Color
-$base-background-color: white;
+$base-background-color: $iron;
 
 // Font Colors
-$base-font-color    : $dark-gray;
-$base-accent-color  : $orange-roughy;
+$base-font-color    : $cod-gray;
+$base-accent-color  : $raw-sienna;
 
 // Link Colors
 $base-link-color: $base-accent-color;
@@ -67,7 +84,7 @@ $base-button-color: $base-link-color;
 $hover-button-color: $hover-link-color;
 
 // Flash Colors
-$alert-color: $light-yellow;
+$alert-color: $di-serria;
 $error-color: $light-red;
 $notice-color: lighten($base-accent-color, 40);
 $success-color: $light-green;
