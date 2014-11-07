@@ -1,0 +1,9 @@
+// Import if Google Fonts URL is defined
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
+}
+
+//Call color from palette
+@function palette($palette, $shade: 'base') {
+    @return map-get(map-get($color-palettes, $palette), $shade);
+}

@@ -7,18 +7,18 @@
   "lintScripts": false,
   "modelSource": null,
   "preprocessorLocations": [
-    "public"
+    "scss"
   ],
-  "preprocessorScriptOutput": "public/scripts",
-  "preprocessorStyleOutput": "public/styles",
-  "projectDescription": "A simple and lightweight mixin library for Sass.",
+  "preprocessorScriptOutput": "js",
+  "preprocessorStyleOutput": "css",
+  "projectDescription": "A simple website for Cafe Zurich Antwerp",
   "projectName": "Zurich",
   "publishedId": null,
   "serverHostname": null,
   "serverPort": null,
   "simpleModePartnerServer": null,
   "templateDefaultLayout": "layout",
-  "templateDefaultPage": "index",
+  "templateDefaultPage": "home",
   "templateDirectory": "templates",
   "type": "mixture",
   "useCompass": false

@@ -1,0 +1,9 @@
+.bullets {
+	padding: em(100) 0;
+	@include outer-container;
+}
+
+.grid-items {
+	padding: em(100) 0;
+	@include outer-container;
+}

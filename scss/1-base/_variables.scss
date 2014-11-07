@@ -1,0 +1,87 @@
+// Typography
+$font-url--google   : "http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Rubik+Mono+One)";
+$roboto-slab        : "Roboto Slab", $georgia;
+$rubik-mono-one     : "Rubik Mono One", $helvetica;
+
+$brand              : $rubik-mono-one;
+
+$sans-serif         : $helvetica;
+$serif              : $georgia;
+$slab               : $roboto-slab;
+$base-font-family   : $slab;
+$header-font-family : $base-font-family;
+
+
+// Font Sizes
+$base-font-size : 1em;
+$h1-font-size   : $base-font-size * 2.25;
+$h2-font-size   : $base-font-size * 2;
+$h3-font-size   : $base-font-size * 1.75;
+$h4-font-size   : $base-font-size * 1.5;
+$h5-font-size   : $base-font-size * 1.25;
+$h6-font-size   : $base-font-size;
+
+
+// Font Weights;
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+$font-weight--black      : 900;
+
+// Line height
+$base-line-height   : 1.5;
+$header-line-height : 1.25;
+
+// Other Sizes
+$base-border-radius : 3px;
+$base-spacing       : $base-line-height * 1em;
+$base-z-index       : 0;
+
+// Colors
+$orange-roughy: #D35B13;
+$irish-coffee: #533421;
+$di-serria: #DA8755;
+$iron: #E1E4E5;
+$cod-gray: #1A1A1A;
+
+
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #DDD;
+$light-red: #FBE3E4;
+$light-yellow: #FFF6BF;
+$light-green: #E6EFC2;
+
+// Background Color
+$base-background-color: white;
+
+// Font Colors
+$base-font-color    : $dark-gray;
+$base-accent-color  : $orange-roughy;
+
+// Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 15);
+$base-button-color: $base-link-color;
+$hover-button-color: $hover-link-color;
+
+// Flash Colors
+$alert-color: $light-yellow;
+$error-color: $light-red;
+$notice-color: lighten($base-accent-color, 40);
+$success-color: $light-green;
+
+// Border color
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Forms
+$form-border-color: $base-border-color;
+$form-border-color-hover: darken($base-border-color, 10);
+$form-border-color-focus: $base-accent-color;
+$form-border-radius: $base-border-radius;
+$form-box-shadow: inset 0 1px 3px rgba(black,0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$form-font-size: $base-font-size;
+$form-font-family: $base-font-family;
