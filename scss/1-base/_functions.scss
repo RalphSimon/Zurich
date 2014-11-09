@@ -7,3 +7,8 @@
 @function palette($palette, $shade: 'base') {
     @return map-get(map-get($color-palettes, $palette), $shade);
 }
+
+// Get image from relative path map
+@function get-img($key, $img) {
+    @return url('#{map-get($path--rel, $key)}/#{$img}');
+}

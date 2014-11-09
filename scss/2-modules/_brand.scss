@@ -1,0 +1,14 @@
+.brand {
+	@include hide-text;
+	@include span-columns(6);
+	@include shift(3);
+	height: 101px;
+	position: relative;
+	top: 40%;
+	@include transform(translateY(-60%));
+	background-image: url("../../img/Logo@2x.png");
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	// background-color: fade_out($cod-gray, .3);
+}

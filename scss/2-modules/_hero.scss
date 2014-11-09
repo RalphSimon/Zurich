@@ -1,59 +1,22 @@
 .hero {
-  $hero-background-top: $base-accent-color; 
-  $hero-background-bottom: adjust-hue($hero-background-top, -5);
-  $hero-color: white;
-  $gradient-angle: 10deg;
-  $hero-image: 'https:
-//raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
-// '../../img/the-reading-man-@lg.jpg';
-    
+	$hero-background-top: fade_out($base-accent-color, .3); 
+	$hero-background-bottom: adjust-hue($hero-background-top, -5);
+	$hero-color: white !global;
+	$gradient-angle: 10deg;
+	$hero-image: '../../img/the-reading-man-@lg.jpg';
 
-  @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
+	position: relative;
+  	height: 100%;
+  	@include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-top, $hero-background-bottom), 20% 10% no-repeat $hero-background-top);
+    background-size: cover;
+    background-blend-mode: multiply;
 
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  padding: 1.5em;
-
-  .hero-inner {
-    @include outer-container;
-    @include clearfix;
-    
-    margin: auto;
-    color: $hero-color;
-
-    button {
-      @include button(simple, $base-background-color);
-      font-size: $base-font-size;
-      outline: none;
-    }
-
-/*
-    .hero-copy {
-      text-align: center;
-      
-      h1 {
-        font-size: 1.6em;
-        margin-bottom: .5em;
-
-        @include media($large-screen) {
-          font-size: 1.8em;
-        }
-      }
-
-      p {
-        font-family: $serif;
-        margin: auto;
-        margin-bottom: 3em; 
-        font-weight: 200;
-        line-height: 1.4em;
-
-        @include media($large-screen) {
-          font-size: 1.1em;
-          max-width: 40%;
-        }
-      }
-    }
-*/
-  }
+	.hero-inner {
+		@include outer-container;
+		@include clearfix;
+		
+		height: 100%;
+		margin: auto;
+		color: $hero-color;
+	}
 }

@@ -1,0 +1,81 @@
+.logo {
+	$logo-font-size : $base-font-size * 2.5;
+	
+	@include span-columns(8 of 12);
+	@include shift(2);
+	position: relative;
+	top: 40%;
+	@include transform(translateY(-60%));
+	background-color: fade_out($cod-gray, .3);
+	
+	.logo-inner {
+		border-bottom: 1px solid $hero-color;
+		
+		h1, span {
+			line-height: 1;
+			text-align: center;
+		}
+		
+		h1 {
+			position: relative;
+			font-size: $h3-font-size ;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		
+		h1:before,
+		h1:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 40%;
+			height: em(2.5);
+			width: em(20);
+			border-radius: 1px;
+			border: 1px solid $hero-color;
+			background-color: $hero-color;
+		}
+		
+		h1:after {
+			right: 0;
+		}
+		
+		span{
+			font-size: $h4-font-size;
+			font-weight: $font-weight--medium;
+		}
+	}
+	
+	span {
+		@include shift(2.25);
+	}
+	
+	span:last-child{
+		text-align: center;
+		font-size: $h5-font-size;
+		font-weight: $font-weight--light;
+	}
+	
+	@include media($tablet) {
+		@include span-columns(6);
+		@include shift(3);
+	}
+	
+	@include media($large-screen) {
+		@include span-columns(4);
+		@include shift(4);
+		
+		.logo-inner {
+			h1 {
+				font-size: $logo-font-size * 1.2;
+			}
+			span {
+				@include shift(1.70);
+			}
+		}	
+		
+		span:last-child {
+			@include shift(5.40);
+		}
+	}
+}

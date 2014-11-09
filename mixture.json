@@ -2,7 +2,8 @@
   "convertHtml": {
     "relativePaths": false
   },
-  "debug": false,
+  "debug": true,
+  "remoteDebugPort": 8081,
   "domain": null,
   "lintScripts": false,
   "modelSource": null,

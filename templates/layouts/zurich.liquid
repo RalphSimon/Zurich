@@ -4,13 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% block title %}Café Zurich{% endblock %}</title>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Rubik+Mono+One' rel='stylesheet' type='text/css'>
         {{ "app.css" | asset_url | stylesheet_tag }}
-        <!-- TODO: Work out template architecture :) -->
         <!-- TODO: Save the architecture as a boilerplate to mixture :) -->
         <!-- TODO: Remember: includes for components, blocks for main content -->
     </head>
     <body class="wrapper">
-        
+        {% include "hero" %}
         <div class="container">
             {% block content %}{% endblock %}
         </div>

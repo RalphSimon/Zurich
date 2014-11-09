@@ -1,13 +1,16 @@
+/* [sass, scss, app.scss] */
 @charset "UTF-8";
 /* Neat 1.7.0
  * http://neat.bourbon.io
  * Copyright 2012-2014 thoughtbot, inc.
  * MIT License */
+/* line 2, /Users/ralph/Sites/Zurich/scss/0-plugins/neat/grid/_box-sizing.scss */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* line 7, /Users/ralph/Sites/Zurich/scss/0-plugins/neat/grid/_box-sizing.scss */
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
@@ -18,20 +21,29 @@ html {
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
+ * 3. Set height to 100% so decendants may have height 100% as well without
+ *	  collapsing
  */
+/* line 11, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+  height: 100%;
+  /* 3 */ }
 
 /**
  * Remove default margin.
+ * Set height to 100%;
  */
+/* line 23, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 body {
-  margin: 0; }
+  margin: 0;
+  padding: 0;
+  height: 100%; }
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -41,6 +53,7 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
+/* line 39, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 article,
 aside,
 details,
@@ -60,6 +73,7 @@ summary {
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
+/* line 60, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 audio,
 canvas,
 progress,
@@ -73,6 +87,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
+/* line 73, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -81,6 +96,7 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
+/* line 83, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 [hidden],
 template {
   display: none; }
@@ -90,12 +106,14 @@ template {
 /**
  * Remove the gray background color from active links in IE 10.
  */
+/* line 95, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 a {
   background-color: transparent; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
+/* line 103, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 a:active,
 a:hover {
   outline: 0; }
@@ -105,12 +123,14 @@ a:hover {
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
+/* line 115, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted; }
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
+/* line 123, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 b,
 strong {
   font-weight: bold; }
@@ -118,6 +138,7 @@ strong {
 /**
  * Address styling not present in Safari and Chrome.
  */
+/* line 132, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 dfn {
   font-style: italic; }
 
@@ -125,6 +146,7 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
+/* line 141, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -132,6 +154,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9.
  */
+/* line 150, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 mark {
   background: #ff0;
   color: #000; }
@@ -139,12 +162,14 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
+/* line 159, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 small {
   font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
+/* line 167, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -152,9 +177,11 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
+/* line 175, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 sup {
   top: -0.5em; }
 
+/* line 179, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 sub {
   bottom: -0.25em; }
 
@@ -163,12 +190,14 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
+/* line 190, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 img {
   border: 0; }
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
+/* line 198, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 svg:not(:root) {
   overflow: hidden; }
 
@@ -177,12 +206,14 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari.
  */
+/* line 209, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 figure {
   margin: 1em 40px; }
 
 /**
  * Address differences between Firefox and other browsers.
  */
+/* line 217, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -191,12 +222,14 @@ hr {
 /**
  * Contain overflow in all browsers.
  */
+/* line 227, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 pre {
   overflow: auto; }
 
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
+/* line 235, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 code,
 kbd,
 pre,
@@ -216,6 +249,7 @@ samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
+/* line 258, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 button,
 input,
 optgroup,
@@ -231,6 +265,7 @@ textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
+/* line 272, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 button {
   overflow: visible; }
 
@@ -240,6 +275,7 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
+/* line 283, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 button,
 select {
   text-transform: none; }
@@ -251,6 +287,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
+/* line 296, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -263,6 +300,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
+/* line 308, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default; }
@@ -270,6 +308,7 @@ html input[disabled] {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
+/* line 317, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -279,6 +318,7 @@ input::-moz-focus-inner {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
+/* line 328, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 input {
   line-height: normal; }
 
@@ -289,6 +329,7 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
+/* line 340, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -301,6 +342,7 @@ input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
+/* line 352, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
@@ -310,6 +352,7 @@ input[type="number"]::-webkit-outer-spin-button {
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
  *    (include `-moz` to future-proof).
  */
+/* line 363, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -323,6 +366,7 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
+/* line 376, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
@@ -330,6 +374,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Define consistent border, margin, and padding.
  */
+/* line 385, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -339,6 +384,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
+/* line 396, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -348,6 +394,7 @@ legend {
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
+/* line 405, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 textarea {
   overflow: auto; }
 
@@ -355,6 +402,7 @@ textarea {
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
+/* line 414, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 optgroup {
   font-weight: bold; }
 
@@ -363,10 +411,12 @@ optgroup {
 /**
  * Remove most spacing between table cells.
  */
+/* line 425, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* line 430, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 td,
 th {
   padding: 0; }
@@ -375,6 +425,7 @@ th {
  * http://bitters.bourbon.io
  * Copyright 2013–2014 thoughtbot, inc.
  * MIT License */
+/* line 1, /Users/ralph/Sites/Zurich/scss/1-base/extends/_button.scss */
 button,
 input[type="submit"] {
   -webkit-font-smoothing: antialiased;
@@ -387,15 +438,18 @@ input[type="submit"] {
   line-height: 1;
   padding: 0.75em 1em;
   text-decoration: none; }
+  /* line 13, /Users/ralph/Sites/Zurich/scss/1-base/extends/_button.scss */
   button:hover,
   input[type="submit"]:hover {
     background-color: #a15424;
     color: white; }
+  /* line 18, /Users/ralph/Sites/Zurich/scss/1-base/extends/_button.scss */
   button:disabled,
   input[type="submit"]:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
 
+/* line 1, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
 body {
   -webkit-font-smoothing: antialiased;
   background-color: #E1E4E5;
@@ -404,6 +458,7 @@ body {
   font-size: 1em;
   line-height: 1.5; }
 
+/* line 10, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
 h1,
 h2,
 h3,
@@ -414,49 +469,62 @@ h6 {
   margin: 0;
   text-rendering: optimizeLegibility; }
 
+/* line 21, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
 h1,
 h3 {
   font-family: "Rubik Mono One", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+/* line 26, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
 h2,
 h4,
 h5,
 h6 {
   font-family: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times, serif; }
 
+/* line 33, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
 h1 {
   font-size: 2.25em; }
 
+/* line 37, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
 h2 {
   font-size: 2em; }
 
+/* line 41, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
 h3 {
   font-size: 1.75em; }
 
+/* line 45, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
 h4 {
   font-size: 1.5em; }
 
+/* line 49, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
 h5 {
   font-size: 1.25em; }
 
+/* line 53, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
 h6 {
   font-size: 1em; }
 
+/* line 57, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
 p {
   margin: 0 0 0.75em; }
 
+/* line 61, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
 a {
   -webkit-transition: color 0.1s linear;
   -moz-transition: color 0.1s linear;
   transition: color 0.1s linear;
   color: #D4773D;
   text-decoration: none; }
+  /* line 66, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
   a:hover {
     color: #a15424; }
+  /* line 70, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
   a:active, a:focus {
     color: #a15424;
     outline: none; }
 
+/* line 76, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
 hr {
   border-bottom: 1px solid #DDD;
   border-left: none;
@@ -464,29 +532,35 @@ hr {
   border-top: none;
   margin: 1.5em 0; }
 
+/* line 84, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
 img,
 picture {
   margin: 0;
   max-width: 100%; }
 
+/* line 90, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
 blockquote {
   border-left: 2px solid #DDD;
   color: #404040;
   margin: 1.5em 0;
   padding-left: 0.75em; }
 
+/* line 97, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
 cite {
   color: #5a5a5a;
   font-style: italic; }
+  /* line 101, /Users/ralph/Sites/Zurich/scss/1-base/_typography.scss */
   cite:before {
     content: "\2014 \00A0"; }
 
+/* line 1, /Users/ralph/Sites/Zurich/scss/1-base/_forms.scss */
 fieldset {
   background: #f7f7f7;
   border: 1px solid #DDD;
   margin: 0 0 0.75em 0;
   padding: 1.5em; }
 
+/* line 8, /Users/ralph/Sites/Zurich/scss/1-base/_forms.scss */
 input,
 label,
 select {
@@ -494,14 +568,18 @@ select {
   font-family: "Roboto Slab", Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 1em; }
 
+/* line 16, /Users/ralph/Sites/Zurich/scss/1-base/_forms.scss */
 label {
   font-weight: bold;
   margin-bottom: 0.375em; }
+  /* line 20, /Users/ralph/Sites/Zurich/scss/1-base/_forms.scss */
   label.required:after {
     content: "*"; }
+  /* line 24, /Users/ralph/Sites/Zurich/scss/1-base/_forms.scss */
   label abbr {
     display: none; }
 
+/* line 29, /Users/ralph/Sites/Zurich/scss/1-base/_forms.scss */
 textarea,
 input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
 select[multiple=multiple] {
@@ -520,10 +598,12 @@ select[multiple=multiple] {
   margin-bottom: 0.75em;
   padding: 0.5em 0.5em;
   width: 100%; }
+  /* line 44, /Users/ralph/Sites/Zurich/scss/1-base/_forms.scss */
   textarea:hover,
   input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
   select[multiple=multiple]:hover {
     border-color: #c4c4c4; }
+  /* line 48, /Users/ralph/Sites/Zurich/scss/1-base/_forms.scss */
   textarea:focus,
   input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
   select[multiple=multiple]:focus {
@@ -531,9 +611,11 @@ select[multiple=multiple] {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(203, 105, 45, 0.7);
     outline: none; }
 
+/* line 55, /Users/ralph/Sites/Zurich/scss/1-base/_forms.scss */
 textarea {
   resize: vertical; }
 
+/* line 59, /Users/ralph/Sites/Zurich/scss/1-base/_forms.scss */
 input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -541,54 +623,66 @@ input[type="search"] {
   -o-appearance: none;
   appearance: none; }
 
+/* line 63, /Users/ralph/Sites/Zurich/scss/1-base/_forms.scss */
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
   margin-right: 0.375em; }
 
+/* line 69, /Users/ralph/Sites/Zurich/scss/1-base/_forms.scss */
 input[type="file"] {
   padding-bottom: 0.75em;
   width: 100%; }
 
+/* line 74, /Users/ralph/Sites/Zurich/scss/1-base/_forms.scss */
 select {
   margin-bottom: 1.5em;
   max-width: 100%;
   width: auto; }
 
+/* line 1, /Users/ralph/Sites/Zurich/scss/1-base/_tables.scss */
 table {
   border-collapse: collapse;
   margin: 0.75em 0;
   table-layout: fixed;
   width: 100%; }
 
+/* line 8, /Users/ralph/Sites/Zurich/scss/1-base/_tables.scss */
 th {
   border-bottom: 1px solid #b7b7b7;
   font-weight: bold;
   padding: 0.75em 0;
   text-align: left; }
 
+/* line 15, /Users/ralph/Sites/Zurich/scss/1-base/_tables.scss */
 td {
   border-bottom: 1px solid #DDD;
   padding: 0.75em 0; }
 
+/* line 20, /Users/ralph/Sites/Zurich/scss/1-base/_tables.scss */
 tr,
 td,
 th {
   vertical-align: middle; }
 
+/* line 1, /Users/ralph/Sites/Zurich/scss/1-base/_lists.scss */
 ul,
 ol {
   margin: 0;
   padding: 0;
   list-style-type: none; }
+/* line 20, /Users/ralph/Sites/Zurich/scss/1-base/_lists.scss */
 dl {
   margin-bottom: 0.75em; }
+  /* line 23, /Users/ralph/Sites/Zurich/scss/1-base/_lists.scss */
   dl dt {
     font-weight: bold;
     margin-top: 0.75em; }
+  /* line 28, /Users/ralph/Sites/Zurich/scss/1-base/_lists.scss */
   dl dd {
     margin: 0; }
 
+/* line 1, /Users/ralph/Sites/Zurich/scss/1-base/_buttons.scss */
 button,
 input[type="submit"] {
   -webkit-appearance: none;
@@ -602,6 +696,7 @@ input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
 
+/* line 8, /Users/ralph/Sites/Zurich/scss/2-modules/_sliding-nav.scss */
 .sliding-menu-button {
   border: 1px solid #b5c4ca;
   border-radius: 3px;
@@ -627,21 +722,26 @@ input[type="submit"] {
   margin-bottom: 1.5;
   position: relative;
   outline: none; }
+  /* line 79, /Users/ralph/Sites/Zurich/scss/0-plugins/bourbon/addons/_button.scss */
   .sliding-menu-button:hover:not(:disabled) {
     box-shadow: inset 0 1px 0 0 #f0f0f0;
     cursor: pointer;
     background-color: #d5d7d8;
     background-image: -webkit-linear-gradient(#d5d7d8, #b6c4c9);
     background-image: linear-gradient(#d5d7d8, #b6c4c9); }
+  /* line 95, /Users/ralph/Sites/Zurich/scss/0-plugins/bourbon/addons/_button.scss */
   .sliding-menu-button:active:not(:disabled) {
     border: 1px solid #b5c4ca;
     box-shadow: inset 0 0 8px 4px #aebdc2, inset 0 0 8px 4px #aebdc2, 0 1px 1px 0 #eee; }
+  /* line 38, /Users/ralph/Sites/Zurich/scss/0-plugins/bourbon/addons/_button.scss */
   .sliding-menu-button:disabled {
     opacity: 0.5;
     cursor: not-allowed; }
+  /* line 17, /Users/ralph/Sites/Zurich/scss/2-modules/_sliding-nav.scss */
   .sliding-menu-button img {
     height: 1.3em; }
 
+/* line 22, /Users/ralph/Sites/Zurich/scss/2-modules/_sliding-nav.scss */
 .sliding-menu-content {
   position: fixed;
   top: 0px;
@@ -662,15 +762,18 @@ input[type="submit"] {
   z-index: 999999;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch; }
+  /* line 32, /Users/ralph/Sites/Zurich/scss/2-modules/_sliding-nav.scss */
   .sliding-menu-content li a {
     border-bottom: 1px solid #333;
     color: #fff;
     display: block;
     font-weight: bold;
     padding: 1em; }
+    /* line 39, /Users/ralph/Sites/Zurich/scss/2-modules/_sliding-nav.scss */
     .sliding-menu-content li a:hover {
       background-color: #D4773D;
       color: #fff; }
+  /* line 45, /Users/ralph/Sites/Zurich/scss/2-modules/_sliding-nav.scss */
   .sliding-menu-content.is-visible {
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -678,6 +781,7 @@ input[type="submit"] {
     -o-transform: translateX(0);
     transform: translateX(0); }
 
+/* line 50, /Users/ralph/Sites/Zurich/scss/2-modules/_sliding-nav.scss */
 .menu-screen {
   position: fixed;
   top: 0px;
@@ -691,127 +795,117 @@ input[type="submit"] {
   opacity: 0;
   visibility: hidden;
   z-index: 999998; }
+  /* line 58, /Users/ralph/Sites/Zurich/scss/2-modules/_sliding-nav.scss */
   .menu-screen.is-visible {
     opacity: .4;
     visibility: visible; }
 
+/* line 1, /Users/ralph/Sites/Zurich/scss/2-modules/_hero.scss */
 .hero {
-  background: url("https:\a//raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient(-280deg, #d46a3d, #D4773D), no-repeat #D4773D scroll;
-  background: url("https:\a//raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient(10deg, #d46a3d, #D4773D), no-repeat #D4773D scroll;
-  background-repeat: no-repeat;
-  background-position: top;
+  position: relative;
+  height: 100%;
+  background: url("../../img/the-reading-man-@lg.jpg"), -webkit-linear-gradient(-280deg, rgba(212, 119, 61, 0.7), rgba(212, 106, 61, 0.7)), 20% 10% no-repeat rgba(212, 119, 61, 0.7);
+  background: url("../../img/the-reading-man-@lg.jpg"), linear-gradient(10deg, rgba(212, 119, 61, 0.7), rgba(212, 106, 61, 0.7)), 20% 10% no-repeat rgba(212, 119, 61, 0.7);
   background-size: cover;
-  padding: 1.5em; }
+  background-blend-mode: multiply; }
+  /* line 14, /Users/ralph/Sites/Zurich/scss/2-modules/_hero.scss */
   .hero .hero-inner {
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
+    height: 100%;
     margin: auto;
-    color: white;
-    /*
-        .hero-copy {
-          text-align: center;
-          
-          h1 {
-            font-size: 1.6em;
-            margin-bottom: .5em;
-    
-            @include media($large-screen) {
-              font-size: 1.8em;
-            }
-          }
-    
-          p {
-            font-family: $serif;
-            margin: auto;
-            margin-bottom: 3em; 
-            font-weight: 200;
-            line-height: 1.4em;
-    
-            @include media($large-screen) {
-              font-size: 1.1em;
-              max-width: 40%;
-            }
-          }
-        }
-    */ }
+    color: white; }
+    /* line 15, /Users/ralph/Sites/Zurich/scss/0-plugins/bourbon/addons/_clearfix.scss */
     .hero .hero-inner:after {
       content: "";
       display: table;
       clear: both; }
+    /* line 15, /Users/ralph/Sites/Zurich/scss/0-plugins/bourbon/addons/_clearfix.scss */
     .hero .hero-inner:after {
       content: "";
       display: table;
       clear: both; }
-    .hero .hero-inner button {
-      border: 1px solid #b5c4ca;
-      border-radius: 3px;
-      box-shadow: inset 0 1px 0 0 white;
-      color: #333333;
-      display: inline-block;
-      font-size: 11px;
-      font-weight: bold;
-      background-color: #E1E4E5;
-      background-image: -webkit-linear-gradient(#E1E4E5, #becbd0);
-      background-image: linear-gradient(#E1E4E5, #becbd0);
-      padding: 7px 18px;
-      text-decoration: none;
-      text-shadow: 0 1px 0 #eaeff0;
-      background-clip: padding-box;
-      font-size: 1em;
-      outline: none; }
-      .hero .hero-inner button:hover:not(:disabled) {
-        box-shadow: inset 0 1px 0 0 #f0f0f0;
-        cursor: pointer;
-        background-color: #d5d7d8;
-        background-image: -webkit-linear-gradient(#d5d7d8, #b6c4c9);
-        background-image: linear-gradient(#d5d7d8, #b6c4c9); }
-      .hero .hero-inner button:active:not(:disabled) {
-        border: 1px solid #b5c4ca;
-        box-shadow: inset 0 0 8px 4px #aebdc2, inset 0 0 8px 4px #aebdc2, 0 1px 1px 0 #eee; }
-      .hero .hero-inner button:disabled {
-        opacity: 0.5;
-        cursor: not-allowed; }
 
+/* line 1, /Users/ralph/Sites/Zurich/scss/2-modules/_brand.scss */
+.brand {
+  color: transparent;
+  font: 0/0 a;
+  text-shadow: none;
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 48.93617%;
+  margin-left: 25.53191%;
+  height: 101px;
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-60%);
+  -moz-transform: translateY(-60%);
+  -ms-transform: translateY(-60%);
+  -o-transform: translateY(-60%);
+  transform: translateY(-60%);
+  background-image: url("../../img/Logo@2x.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  /* line 85, /Users/ralph/Sites/Zurich/scss/0-plugins/neat/grid/_span-columns.scss */
+  .brand:last-child {
+    margin-right: 0; }
+
+/* line 1, /Users/ralph/Sites/Zurich/scss/2-modules/_bullets.scss */
 .bullets {
   overflow: auto;
   margin-bottom: 1.5; }
   @media screen and (min-width: 53.75em) {
+    /* line 8, /Users/ralph/Sites/Zurich/scss/2-modules/_bullets.scss */
     .bullets .two-col-bullet {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 48.82117%; }
+      margin-right: 2.12766%;
+      width: 48.93617%; }
+      /* line 85, /Users/ralph/Sites/Zurich/scss/0-plugins/neat/grid/_span-columns.scss */
       .bullets .two-col-bullet:last-child {
         margin-right: 0; }
+      /* line 82, /Users/ralph/Sites/Zurich/scss/0-plugins/neat/grid/_omega.scss */
       .bullets .two-col-bullet:nth-child(2n) {
         margin-right: 0; }
+      /* line 87, /Users/ralph/Sites/Zurich/scss/0-plugins/neat/grid/_omega.scss */
       .bullets .two-col-bullet:nth-child(2n+1) {
         clear: left; } }
   @media screen and (min-width: 53.75em) {
+    /* line 15, /Users/ralph/Sites/Zurich/scss/2-modules/_bullets.scss */
     .bullets .three-col-bullet {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
+      margin-right: 2.12766%;
+      width: 31.91489%; }
+      /* line 85, /Users/ralph/Sites/Zurich/scss/0-plugins/neat/grid/_span-columns.scss */
       .bullets .three-col-bullet:last-child {
         margin-right: 0; }
+      /* line 82, /Users/ralph/Sites/Zurich/scss/0-plugins/neat/grid/_omega.scss */
       .bullets .three-col-bullet:nth-child(3n) {
         margin-right: 0; }
+      /* line 87, /Users/ralph/Sites/Zurich/scss/0-plugins/neat/grid/_omega.scss */
       .bullets .three-col-bullet:nth-child(3n+1) {
         clear: left; } }
   @media screen and (min-width: 53.75em) {
+    /* line 23, /Users/ralph/Sites/Zurich/scss/2-modules/_bullets.scss */
     .bullets .four-col-bullet {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 23.23176%; }
+      margin-right: 2.12766%;
+      width: 23.40426%; }
+      /* line 85, /Users/ralph/Sites/Zurich/scss/0-plugins/neat/grid/_span-columns.scss */
       .bullets .four-col-bullet:last-child {
         margin-right: 0; }
+      /* line 82, /Users/ralph/Sites/Zurich/scss/0-plugins/neat/grid/_omega.scss */
       .bullets .four-col-bullet:nth-child(4n) {
         margin-right: 0; }
+      /* line 87, /Users/ralph/Sites/Zurich/scss/0-plugins/neat/grid/_omega.scss */
       .bullets .four-col-bullet:nth-child(4n+1) {
         clear: left; } }
+  /* line 30, /Users/ralph/Sites/Zurich/scss/2-modules/_bullets.scss */
   .bullets .bullet-icon {
     float: left;
     background: #D4773D;
@@ -819,15 +913,20 @@ input[type="submit"] {
     border-radius: 50%;
     width: 3.5em;
     height: 3.5em; }
+  /* line 39, /Users/ralph/Sites/Zurich/scss/2-modules/_bullets.scss */
   .bullets .bullet-icon-1 {
     background: #D4773D; }
+  /* line 43, /Users/ralph/Sites/Zurich/scss/2-modules/_bullets.scss */
   .bullets .bullet-icon-2 {
     background: #d43d81; }
+  /* line 47, /Users/ralph/Sites/Zurich/scss/2-modules/_bullets.scss */
   .bullets .bullet-icon-3 {
     background: #453dd4; }
+  /* line 51, /Users/ralph/Sites/Zurich/scss/2-modules/_bullets.scss */
   .bullets .bullet-content {
     margin-left: 4.9em;
     margin-bottom: 2em; }
+  /* line 56, /Users/ralph/Sites/Zurich/scss/2-modules/_bullets.scss */
   .bullets h2 {
     font-size: 1.4em;
     padding-top: 0.5em;
@@ -835,10 +934,12 @@ input[type="submit"] {
     border-bottom: 1px solid rgba(26, 26, 26, 0.2);
     display: inline-block; }
 
+/* line 15, /Users/ralph/Sites/Zurich/scss/0-plugins/bourbon/addons/_clearfix.scss */
 .grid-items:after {
   content: "";
   display: table;
   clear: both; }
+/* line 24, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
 .grid-items .grid-item {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -856,85 +957,107 @@ input[type="submit"] {
   text-align: center;
   cursor: pointer; }
   @media screen and (min-width: 53.75em) {
+    /* line 24, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
     .grid-items .grid-item {
       width: 33.33333%; } }
+  /* line 44, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
   .grid-items .grid-item:nth-child(1) {
     background-color: #b07f61;
     box-shadow: inset 0px 0px 1px 2px #94664a; }
+    /* line 48, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
     .grid-items .grid-item:nth-child(1):hover {
       background-color: #94664a;
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover; }
+  /* line 44, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
   .grid-items .grid-item:nth-child(2) {
     background-color: #3581A5;
     box-shadow: inset 0px 0px 1px 2px #29637e; }
+    /* line 48, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
     .grid-items .grid-item:nth-child(2):hover {
       background-color: #29637e;
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover; }
+  /* line 44, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
   .grid-items .grid-item:nth-child(3) {
     background-color: #5FBEBE;
     box-shadow: inset 0px 0px 1px 2px #44a6a6; }
+    /* line 48, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
     .grid-items .grid-item:nth-child(3):hover {
       background-color: #44a6a6;
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover; }
+  /* line 44, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
   .grid-items .grid-item:nth-child(4) {
     background-color: #98C79A;
     box-shadow: inset 0px 0px 1px 2px #77b57a; }
+    /* line 48, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
     .grid-items .grid-item:nth-child(4):hover {
       background-color: #77b57a;
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover; }
+  /* line 44, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
   .grid-items .grid-item:nth-child(5) {
     background-color: #A7A891;
     box-shadow: inset 0px 0px 1px 2px #909175; }
+    /* line 48, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
     .grid-items .grid-item:nth-child(5):hover {
       background-color: #909175;
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover; }
+  /* line 44, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
   .grid-items .grid-item:nth-child(6) {
     background-color: #BDCC97;
     box-shadow: inset 0px 0px 1px 2px #a7bb75; }
+    /* line 48, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
     .grid-items .grid-item:nth-child(6):hover {
       background-color: #a7bb75;
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover; }
+  /* line 44, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
   .grid-items .grid-item:nth-child(7) {
     background-color: #979EA0;
     box-shadow: inset 0px 0px 1px 2px #7c8588; }
+    /* line 48, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
     .grid-items .grid-item:nth-child(7):hover {
       background-color: #7c8588;
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover; }
+/* line 58, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
 .grid-items .grid-item img {
   display: block;
   height: 3em;
   margin: auto;
   margin-bottom: 1em; }
+/* line 65, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
 .grid-items .grid-item h1 {
   color: white;
   font-size: 1.3em;
   margin-bottom: .4em; }
+/* line 71, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
 .grid-items .grid-item p {
   margin: auto;
   color: rgba(255, 255, 255, 0.7); }
   @media screen and (min-width: 40em) {
+    /* line 71, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
     .grid-items .grid-item p {
       max-width: 70%; } }
 @media screen and (min-width: 53.75em) {
+  /* line 79, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
   .grid-items .grid-item-big {
     width: 66.66667%; } }
 @media screen and (min-width: 40em) {
+  /* line 83, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
   .grid-items .grid-item-big p {
     max-width: 60%; } }
+/* line 90, /Users/ralph/Sites/Zurich/scss/2-modules/_grid-items.scss */
 .grid-items .grid-item-image {
   background: url(/images/lake-transparent.png);
   background-color: #b07f61;
@@ -942,60 +1065,79 @@ input[type="submit"] {
   background-position: top;
   background-size: cover; }
 
+/* line 1, /Users/ralph/Sites/Zurich/scss/2-modules/_footer.scss */
 .footer {
   background: #724f39;
-  padding: 3em 1.618em;
+  padding: 3em 30px;
   width: 100%; }
+  /* line 11, /Users/ralph/Sites/Zurich/scss/2-modules/_footer.scss */
   .footer .footer-logo {
     text-align: center;
     margin-bottom: 2em; }
+    /* line 15, /Users/ralph/Sites/Zurich/scss/2-modules/_footer.scss */
     .footer .footer-logo img {
       height: 3em; }
+  /* line 20, /Users/ralph/Sites/Zurich/scss/2-modules/_footer.scss */
   .footer .footer-links {
     margin-bottom: 1.5em; }
+    /* line 15, /Users/ralph/Sites/Zurich/scss/0-plugins/bourbon/addons/_clearfix.scss */
     .footer .footer-links:after {
       content: "";
       display: table;
       clear: both; }
     @media screen and (min-width: 40em) {
+      /* line 20, /Users/ralph/Sites/Zurich/scss/2-modules/_footer.scss */
       .footer .footer-links {
-        margin-left: 25.58941%; } }
+        margin-left: 25.53191%; } }
+  /* line 29, /Users/ralph/Sites/Zurich/scss/2-modules/_footer.scss */
   .footer ul {
     margin-bottom: 3em; }
     @media screen and (min-width: 40em) {
+      /* line 29, /Users/ralph/Sites/Zurich/scss/2-modules/_footer.scss */
       .footer ul {
         float: left;
         display: block;
-        margin-right: 2.35765%;
-        width: 23.23176%; }
+        margin-right: 2.12766%;
+        width: 23.40426%; }
+        /* line 85, /Users/ralph/Sites/Zurich/scss/0-plugins/neat/grid/_span-columns.scss */
         .footer ul:last-child {
           margin-right: 0; }
+        /* line 82, /Users/ralph/Sites/Zurich/scss/0-plugins/neat/grid/_omega.scss */
         .footer ul:nth-child(3n) {
           margin-right: 0; }
+        /* line 87, /Users/ralph/Sites/Zurich/scss/0-plugins/neat/grid/_omega.scss */
         .footer ul:nth-child(3n+1) {
           clear: left; }
+        /* line 15, /Users/ralph/Sites/Zurich/scss/0-plugins/bourbon/addons/_clearfix.scss */
         .footer ul:after {
           content: "";
           display: table;
           clear: both; } }
+  /* line 39, /Users/ralph/Sites/Zurich/scss/2-modules/_footer.scss */
   .footer li {
     text-align: center; }
     @media screen and (min-width: 40em) {
+      /* line 39, /Users/ralph/Sites/Zurich/scss/2-modules/_footer.scss */
       .footer li {
         text-align: left; } }
+  /* line 47, /Users/ralph/Sites/Zurich/scss/2-modules/_footer.scss */
   .footer li a {
     color: rgba(255, 255, 255, 0.4); }
+    /* line 50, /Users/ralph/Sites/Zurich/scss/2-modules/_footer.scss */
     .footer li a:hover {
       color: white; }
+  /* line 55, /Users/ralph/Sites/Zurich/scss/2-modules/_footer.scss */
   .footer li h3 {
     color: white;
     font-size: 1em;
     font-weight: 800;
     margin-bottom: .4em; }
+  /* line 62, /Users/ralph/Sites/Zurich/scss/2-modules/_footer.scss */
   .footer hr {
     border: 1px solid rgba(255, 255, 255, 0.1);
     margin: 0 auto 1.5em;
     width: 12em; }
+  /* line 68, /Users/ralph/Sites/Zurich/scss/2-modules/_footer.scss */
   .footer p {
     color: rgba(255, 255, 255, 0.4);
     font-size: .9em;
@@ -1004,21 +1146,25 @@ input[type="submit"] {
     max-width: 35em;
     text-align: center; }
 
+/* line 1, /Users/ralph/Sites/Zurich/scss/3-layouts/_zurich.scss */
 .bullets {
   padding: 6.25em 0;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
+  /* line 15, /Users/ralph/Sites/Zurich/scss/0-plugins/bourbon/addons/_clearfix.scss */
   .bullets:after {
     content: "";
     display: table;
     clear: both; }
 
+/* line 6, /Users/ralph/Sites/Zurich/scss/3-layouts/_zurich.scss */
 .grid-items {
   padding: 6.25em 0;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
+  /* line 15, /Users/ralph/Sites/Zurich/scss/0-plugins/bourbon/addons/_clearfix.scss */
   .grid-items:after {
     content: "";
     display: table;
