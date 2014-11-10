@@ -17,13 +17,15 @@
         </div>
         {% include "footer" %}
         <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-        
+        {{ "app.js" | asset_url | script_tag }}
         {{ "classie.js" | asset_url | script_tag }}
         {{ "overlay-nav.js" | asset_url | script_tag }}
+<!--
         <script>
             $("a").click(function(){
                 $(this).toggleClass("open");
             });    
         </script>
+-->
     </body>
 </html>

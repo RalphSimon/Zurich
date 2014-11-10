@@ -708,6 +708,13 @@ input[type="submit"] {
     -o-transform: rotate(45deg);
     transform: rotate(45deg); }
 
+.contrast {
+  border-color: #D4773D; }
+  .contrast .icn--toggle {
+    background-color: #D4773D; }
+    .contrast .icn--toggle:before, .contrast .icn--toggle:after {
+      background-color: #D4773D; }
+
 .overlay {
   /*
       @include position(fixed 0 null null 0);

@@ -85,3 +85,15 @@ $duration: .5s;
         }
     }
 }
+
+.contrast {
+	border-color: $base-accent-color;
+	
+	.icn--toggle {
+		background-color: $base-accent-color;
+		
+		&:before, &:after {
+			background-color: $base-accent-color;
+		}
+	}  
+}
