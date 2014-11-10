@@ -1,0 +1,23 @@
+.opening-hours {
+	@include span-columns(8);
+	@include shift(2);
+	@include clearfix;
+	text-align: center;
+	position: relative;
+	top: 60%;
+	@include transform(translateY(-60%));
+	
+	p {
+		border-bottom: 1px solid $hero-color;
+		padding-bottom: $gutter/2;
+		span a{
+			color: $hero-color;
+		}
+		
+	}
+	
+	p:last-child {
+		border-bottom: none;
+	}
+	
+}

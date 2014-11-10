@@ -15,4 +15,11 @@
 		@include span-columns(11);
 		@include shift(.5);
 	}
+	
+	@include media($medium-screen) {
+		p {
+			@include span-columns(7);
+			@include shift(2.5);
+		}
+	}
 }

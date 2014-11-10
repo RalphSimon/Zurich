@@ -826,8 +826,8 @@ input[type="submit"] {
   float: left;
   display: block;
   margin-right: 2.12766%;
-  width: 48.93617%;
-  margin-left: 25.53191%;
+  width: 65.95745%;
+  margin-left: 17.02128%;
   height: 101px;
   position: relative;
   top: 40%;
@@ -842,6 +842,34 @@ input[type="submit"] {
   background-repeat: no-repeat; }
   .brand:last-child {
     margin-right: 0; }
+
+.opening-hours {
+  float: left;
+  display: block;
+  margin-right: 2.12766%;
+  width: 65.95745%;
+  margin-left: 17.02128%;
+  text-align: center;
+  position: relative;
+  top: 60%;
+  -webkit-transform: translateY(-60%);
+  -moz-transform: translateY(-60%);
+  -ms-transform: translateY(-60%);
+  -o-transform: translateY(-60%);
+  transform: translateY(-60%); }
+  .opening-hours:last-child {
+    margin-right: 0; }
+  .opening-hours:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .opening-hours p {
+    border-bottom: 1px solid white;
+    padding-bottom: 15px; }
+    .opening-hours p span a {
+      color: white; }
+  .opening-hours p:last-child {
+    border-bottom: none; }
 
 .about {
   max-width: 68em;
@@ -868,6 +896,15 @@ input[type="submit"] {
     margin-left: 4.25532%; }
     .about p:last-child {
       margin-right: 0; }
+  @media screen and (min-width: 40em) {
+    .about p {
+      float: left;
+      display: block;
+      margin-right: 2.12766%;
+      width: 57.44681%;
+      margin-left: 21.2766%; }
+      .about p:last-child {
+        margin-right: 0; } }
 
 .bullets {
   overflow: auto;
