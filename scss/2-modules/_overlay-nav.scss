@@ -1,0 +1,110 @@
+$font-color: white;
+$focus-color: $base-accent-color;
+$overlay-background: desaturate(darken(rgba($base-accent-color, .9), 20), 30);
+
+.overlay {
+/*
+    @include position(fixed 0 null null 0);
+    @include size(100% 100%);
+*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: $font-color;
+    background: $overlay-background;
+    z-index: 100;
+    
+    /* Menu style */
+    & .navbar {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        height: 60%;
+        @include transform(translateY(-50%));
+    }
+    
+    & .nav {
+	    display: inline-block;
+	    width: 100%;
+	    height: 50%;
+	    padding-top: em(10px);
+	    padding: 0;
+	    margin: 0 auto;
+	    text-align: center;
+	    margin: 0 auto;
+	    @extend %clearfix;    
+	    list-style: none;
+	
+	    li {
+	        display: block;
+	        position: relative;
+	        -webkit-backface-visibility: hidden;
+	        backface-visibility: hidden;
+	
+	        a {
+	            font-size: em(24px);
+	            font-weight: 300;
+	            display: block;
+	            -webkit-transition: color 0.36s;
+	            transition: color 0.36s;
+	            color: #fff;
+	        }
+	
+	        &:hover a,
+	        &:focus a {
+	            color: $base-accent-color;
+	        }
+	    }
+	
+	
+	    @include e(item) {
+	        &:hover li {
+	            font-size: em(13px);
+	            height: em(54px);
+	            line-height: em(54px);
+	
+	            a {
+	                color: $font-color;
+	            }
+	        } 
+	        
+	        a {
+				display: block;
+			    padding: em(10px);
+			    text-align: center;
+			    font-weight: $font-weight--light;
+	            color: $font-color;
+	        }  
+	    }
+	}
+    
+    p {
+        margin-bottom: 1rem;
+        font-size: .9rem;
+        padding: 0;
+    }
+
+    p, p a {
+        color: $font-color;
+    }
+}
+// Effects
+.overlay-slidedown {
+    visibility: hidden;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.4s ease-in-out, visibility 0s 0.4s;
+    transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+}
+
+.overlay-slidedown.open {
+    visibility: visible;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+}
+
+

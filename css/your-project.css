@@ -1,15 +1,12 @@
-/* [sass, scss, your-project.scss] */
 /* Neat 1.7.0
  * http://neat.bourbon.io
  * Copyright 2012-2014 thoughtbot, inc.
  * MIT License */
-/* line 2, /Users/ralph/Sites/Zurich/scss/0-plugins/neat/grid/_box-sizing.scss */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 7, /Users/ralph/Sites/Zurich/scss/0-plugins/neat/grid/_box-sizing.scss */
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
@@ -23,7 +20,6 @@ html {
  * 3. Set height to 100% so decendants may have height 100% as well without
  *	  collapsing
  */
-/* line 11, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -38,7 +34,6 @@ html {
  * Remove default margin.
  * Set height to 100%;
  */
-/* line 23, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 body {
   margin: 0;
   padding: 0;
@@ -52,7 +47,6 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-/* line 39, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 article,
 aside,
 details,
@@ -72,7 +66,6 @@ summary {
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-/* line 60, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 audio,
 canvas,
 progress,
@@ -86,7 +79,6 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 73, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -95,7 +87,6 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
-/* line 83, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 [hidden],
 template {
   display: none; }
@@ -105,14 +96,12 @@ template {
 /**
  * Remove the gray background color from active links in IE 10.
  */
-/* line 95, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 a {
   background-color: transparent; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 103, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 a:active,
 a:hover {
   outline: 0; }
@@ -122,14 +111,12 @@ a:hover {
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
-/* line 115, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted; }
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-/* line 123, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 b,
 strong {
   font-weight: bold; }
@@ -137,7 +124,6 @@ strong {
 /**
  * Address styling not present in Safari and Chrome.
  */
-/* line 132, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 dfn {
   font-style: italic; }
 
@@ -145,7 +131,6 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-/* line 141, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -153,7 +138,6 @@ h1 {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 150, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 mark {
   background: #ff0;
   color: #000; }
@@ -161,14 +145,12 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 159, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 small {
   font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 167, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -176,11 +158,9 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
-/* line 175, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 sup {
   top: -0.5em; }
 
-/* line 179, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 sub {
   bottom: -0.25em; }
 
@@ -189,14 +169,12 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
-/* line 190, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 img {
   border: 0; }
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
-/* line 198, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 svg:not(:root) {
   overflow: hidden; }
 
@@ -205,14 +183,12 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari.
  */
-/* line 209, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 figure {
   margin: 1em 40px; }
 
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 217, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -221,14 +197,12 @@ hr {
 /**
  * Contain overflow in all browsers.
  */
-/* line 227, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 pre {
   overflow: auto; }
 
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-/* line 235, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 code,
 kbd,
 pre,
@@ -248,7 +222,6 @@ samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-/* line 258, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 button,
 input,
 optgroup,
@@ -264,7 +237,6 @@ textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-/* line 272, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 button {
   overflow: visible; }
 
@@ -274,7 +246,6 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-/* line 283, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 button,
 select {
   text-transform: none; }
@@ -286,7 +257,6 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 296, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -299,7 +269,6 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 308, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default; }
@@ -307,7 +276,6 @@ html input[disabled] {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 317, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -317,7 +285,6 @@ input::-moz-focus-inner {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 328, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 input {
   line-height: normal; }
 
@@ -328,7 +295,6 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-/* line 340, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -341,7 +307,6 @@ input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-/* line 352, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
@@ -351,7 +316,6 @@ input[type="number"]::-webkit-outer-spin-button {
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 363, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -365,7 +329,6 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-/* line 376, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
@@ -373,7 +336,6 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 385, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -383,7 +345,6 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 396, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -393,7 +354,6 @@ legend {
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
-/* line 405, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 textarea {
   overflow: auto; }
 
@@ -401,7 +361,6 @@ textarea {
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
-/* line 414, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 optgroup {
   font-weight: bold; }
 
@@ -410,59 +369,47 @@ optgroup {
 /**
  * Remove most spacing between table cells.
  */
-/* line 425, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 430, /Users/ralph/Sites/Zurich/scss/0-plugins/_normalize.scss */
 td,
 th {
   padding: 0; }
 
-/* line 6, /Users/ralph/Sites/Zurich/scss/your-project.scss */
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   background-color: #F3F1EC;
   color: #333; }
 
-/* line 13, /Users/ralph/Sites/Zurich/scss/your-project.scss */
 body {
   padding: 20px; }
 
-/* line 17, /Users/ralph/Sites/Zurich/scss/your-project.scss */
 h1 {
   font-size: 30px; }
 
-/* line 21, /Users/ralph/Sites/Zurich/scss/your-project.scss */
 .nav {
   padding: 0;
   margin-bottom: 20px;
   display: inline-block; }
-  /* line 15, /Users/ralph/Sites/Zurich/scss/0-plugins/bourbon/addons/_clearfix.scss */
   .nav:after {
     content: "";
     display: table;
     clear: both; }
-  /* line 28, /Users/ralph/Sites/Zurich/scss/your-project.scss */
   .nav > li {
     float: left;
     list-style: none; }
-    /* line 34, /Users/ralph/Sites/Zurich/scss/your-project.scss */
     .nav > li > a {
       background-color: #2685F2;
       color: #fff;
       border-left: 1px solid #fff;
       padding: 10px 15px; }
-    /* line 41, /Users/ralph/Sites/Zurich/scss/your-project.scss */
     .nav > li:first-child > a {
       border-left: none; }
-    /* line 45, /Users/ralph/Sites/Zurich/scss/your-project.scss */
     .nav > li.current > a {
       background-color: #00E; }
 
-/* line 51, /Users/ralph/Sites/Zurich/scss/your-project.scss */
 .btn {
   border: 1px solid #b01613;
   border-radius: 3px;
@@ -479,18 +426,15 @@ h1 {
   text-shadow: 0 1px 0 #a30f0c;
   background-clip: padding-box;
   font-size: 15px; }
-  /* line 79, /Users/ralph/Sites/Zurich/scss/0-plugins/bourbon/addons/_button.scss */
   .btn:hover:not(:disabled) {
     box-shadow: inset 0 1px 0 0 #d84f4c;
     cursor: pointer;
     background-color: #ca2a28;
     background-image: -webkit-linear-gradient(#ca2a28, #af1714);
     background-image: linear-gradient(#ca2a28, #af1714); }
-  /* line 95, /Users/ralph/Sites/Zurich/scss/0-plugins/bourbon/addons/_button.scss */
   .btn:active:not(:disabled) {
     border: 1px solid #b01613;
     box-shadow: inset 0 0 8px 4px #a11614, inset 0 0 8px 4px #a11614, 0 1px 1px 0 #eee; }
-  /* line 38, /Users/ralph/Sites/Zurich/scss/0-plugins/bourbon/addons/_button.scss */
   .btn:disabled {
     opacity: 0.5;
     cursor: not-allowed; }

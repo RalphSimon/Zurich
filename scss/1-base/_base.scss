@@ -3,8 +3,16 @@
  * Copyright 2013–2014 thoughtbot, inc.
  * MIT License */
 
-// Functions (These are custom)
+// Custom
 @import "functions";
+@import "mixins";
+
+// Custom Extends
+%pseudos {
+    display: block;
+    content: '';
+    position: absolute;
+}
 
 
 // Variables

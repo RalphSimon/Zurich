@@ -6,6 +6,7 @@
         <title>{% block title %}Café Zurich{% endblock %}</title>
         <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Rubik+Mono+One' rel='stylesheet' type='text/css'>
         {{ "app.css" | asset_url | stylesheet_tag }}
+        {{ "modernizr.custom.js" | asset_url | script_tag }}
         <!-- TODO: Save the architecture as a boilerplate to mixture :) -->
         <!-- TODO: Remember: includes for components, blocks for main content -->
     </head>
@@ -16,6 +17,13 @@
         </div>
         {% include "footer" %}
         <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-        {{ "sliding-nav.js" | asset_url | script_tag }}
+        
+        {{ "classie.js" | asset_url | script_tag }}
+        {{ "overlay-nav.js" | asset_url | script_tag }}
+        <script>
+            $("a").click(function(){
+                $(this).toggleClass("open");
+            });    
+        </script>
     </body>
 </html>

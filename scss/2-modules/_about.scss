@@ -1,0 +1,18 @@
+.about {
+	@include outer-container;
+	@include clearfix;
+	padding: $base-spacing*2 $gutter;
+	
+	h3, p {
+		text-align: center;
+	}
+	
+	h3 {
+		line-height: $base-line-height*1.5;
+	}
+	
+	p {
+		@include span-columns(11);
+		@include shift(.5);
+	}
+}
