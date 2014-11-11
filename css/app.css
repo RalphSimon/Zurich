@@ -975,7 +975,7 @@ article {
         float: left;
         display: block;
         margin-right: 2.12766%;
-        width: 31.91489%; }
+        width: 48.93617%; }
         article .list:last-child, article .dishes:last-child {
           margin-right: 0; } }
   article .list:first-child {
@@ -1011,22 +1011,16 @@ article {
 
 #breakfast {
   background: rgba(218, 135, 85, 0.3); }
-  @media screen and (min-width: 40em) {
-    #breakfast .list {
-      margin-left: 17.02128%; } }
 
 #lunch {
   background-color: none; }
-  @media screen and (min-width: 40em) {
-    #lunch .list:first-child {
-      margin-left: 17.02128%; } }
   #lunch .dishes:after {
     content: "";
     display: table;
     clear: both; }
   @media screen and (min-width: 40em) {
     #lunch .dishes {
-      margin-left: 34.04255%; } }
+      margin-left: 25.53191%; } }
 
 #dinner {
   background-color: #724f39; }
@@ -1035,20 +1029,25 @@ article {
   #dinner em {
     display: block;
     margin-bottom: 30px; }
+  #dinner p {
+    margin-bottom: 30px; }
   #dinner .dishes {
     background: rgba(26, 26, 26, 0.7); }
     #dinner .dishes .description span {
       color: white; }
-  @media screen and (min-width: 40em) {
-    #dinner .dishes:first-child {
-      margin-left: 17.02128%; } }
   #dinner .last:after {
     content: "";
     display: table;
     clear: both; }
   @media screen and (min-width: 40em) {
     #dinner .last {
-      margin-left: 34.04255%; } }
+      float: left;
+      display: block;
+      margin-right: 2.12766%;
+      width: 65.95745%;
+      margin-left: 17.02128%; }
+      #dinner .last:last-child {
+        margin-right: 0; } }
 
 .bullets {
   overflow: auto;
