@@ -7,6 +7,11 @@
 	top: 60%;
 	@include transform(translateY(-60%));
 	
+	@include media($medium-screen) {
+		@include span-columns(4);
+		@include shift(4);
+	}
+	
 	p {
 		border-bottom: 1px solid $hero-color;
 		padding-bottom: $gutter/2;

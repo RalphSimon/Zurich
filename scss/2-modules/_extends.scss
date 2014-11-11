@@ -1,0 +1,12 @@
+%description {
+	@include span-columns(10 of 12);
+	text-align: left;
+	font-weight: $font-weight--light;
+}
+
+%price {
+	@include span-columns(2 of 12);
+   	@include omega;
+   	text-align: right;
+   	font-weight: $font-weight--light;
+}

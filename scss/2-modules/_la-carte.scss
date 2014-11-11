@@ -1,69 +1,170 @@
+$font-color-dish: palette(black);
+$font-color-description: palette(black, light);
+$font-color-dinner: white;
+$background-breakfast: fade_out($di-serria, .7);
+$background-lunch: fade_out($base-accent-color, .1);
+$background-dinner: $shingle-fawn;
+$background-dinner-dish: fade_out(palette(black), .3);
+$margin: $gutter;
+$margin-bottom: $gutter/2;
+
+
+// general styles
 article {
+    @include outer-container(100%);
+    @include clearfix;
+    padding-top: $gutter;
     text-align: center;
-    @include container(100%);
     
-    @include mq(medium) {
-        @include container(em(800px));
+    @include media($medium-screen) {
+	    padding: $gutter;
     }
     
-    em {
-        text-transform: lowercase;
-        font-size: em(14px);
-        font-weight: $font-weight--light;
-        color: palette(grey);
+    .row {
+		@include clearfix;
+		
+		@include media($medium-screen) {
+			margin-bottom: $gutter;
+		}
     }
-    
-    & .list {
-        border-collapse: collapse;
-    }
-    
-    table {
-        @include span(12);
-        margin-bottom: em(24px);
-        border-collapse: separate;
-        border-spacing: 0 em(16px);
-        
-        
-        
-        @include mq(medium) {
-            @include gallery(6 of 12);
+    .list, .dishes {
+	    @include span-columns(12);
+	    @include pad($margin);
+	    
+	    @include media($medium-screen) {
+		    @include span-columns(4); 
+	    }    
+	}
+	.list:first-child {
+		padding-bottom: 0;
+	}
+	
+	.list ul {
+		
+        li {
+	        @include clearfix;
+	        // margin-bottom: $margin-bottom;
+	        .description {
+	        	@extend %description; 
+	        	text-transform: uppercase;
+	        }
+	        span {
+		        @extend %price;
+	        }
         }
-        
-        
-        caption {
-            font-weight: $font-weight--bold;
-            font-size: em(20px);
-            text-transform: uppercase;
-            color: $color-accent;
-        }
-        
-        
-        th, td:nth-child(2n) {
-            font-family: $font-family--secondary;
-            font-weight: $font-weight--light;
-            font-size: em(20px);
-            height: auto;
-        }
-        
-        th, td {
-            text-align: left;
-        }
-        
-        th {
-            text-transform: uppercase;
-            
-            span {
-                font-family: $font-family--primary;
-                font-style: italic;
-                font-size: em(12px);
-                text-align: center;
-                text-transform: lowercase;
-            }
-        }
-        
-        td:nth-child(2n) {
-            text-align: right;
-            vertical-align: text-top;
+       
+        @include media($medium-screen) {
+            @include span-columns(12 of 12);
         }
     }
+	
+	.dishes {
+		background-color: $background-lunch;
+		h3 {
+			line-height: $base-line-height;
+			color: $font-color-dish;
+		}
+		
+		.description {
+			@extend %description;
+			margin-bottom: $margin-bottom; 
+			
+			span {
+				@include fill-parent;
+				font-size: $base-font-size * .9;
+				color: $font-color-description;
+				text-align: left;
+			}
+		}
+		.description:last-child {
+			margin-bottom: 0;
+		}
+		
+		span {
+			@extend %price;
+		}
+	}
 }
+
+// Individual styles for breakfast, lunch and dinner
+#breakfast {
+	background: $background-breakfast;
+	
+	.list {
+		@include media($medium-screen) {
+		    @include shift(2); 
+	    }
+	}
+}
+
+#lunch {
+	background-color: none;
+	.list:first-child {
+		@include media($medium-screen) {
+		    @include shift(2); 
+	    }
+	}
+
+	.dishes {
+		@include clearfix;
+		
+		@include media($medium-screen) {
+			@include shift(4);
+		}
+	}
+}
+
+#dinner {
+	background-color: $background-dinner;
+	&, h3, & description, & desciption span {
+		color: $font-color-dinner;
+	}
+	
+	em {
+		display: block;
+		margin-bottom: $gutter;
+	}
+	
+	.dishes{
+		background: $background-dinner-dish;
+		
+		.description {
+			
+			span {
+				color: $font-color-dinner;
+			}
+		}
+	}
+	
+	.dishes:first-child {
+		@include media($medium-screen) {
+			@include shift(2);
+		}
+	}
+	
+	.last {
+		@include clearfix;
+		
+		@include media($medium-screen) {
+			@include shift(4);
+		}
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{% block title %}Café Zurich{% endblock %}</title>
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Rubik+Mono+One' rel='stylesheet' type='text/css'>
+        <title>{% block title %}{% endblock %}</title>
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100|Rubik+Mono+One' rel='stylesheet' type='text/css'>
         {{ "app.css" | asset_url | stylesheet_tag }}
         {{ "modernizr.custom.js" | asset_url | script_tag }}
         <!-- TODO: Save the architecture as a boilerplate to mixture :) -->

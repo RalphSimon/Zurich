@@ -3,6 +3,15 @@
 {% block content %}
 
 {% include "about" %}
-{% include "bullets" %}
+<article itemprop="breakfast" id="breakfast" class="tab-panel active panel">
+	{% include "ontbijt" %}
+</article>
 
+<article itemprop="lunch" id="lunch" class="tab-panel active panel">
+	{% include "lunch" %}
+</article>
+
+<article itemprop="dinner" id="dinner">
+	{% include "dinner" %}
+</article>	
 {% endblock %}

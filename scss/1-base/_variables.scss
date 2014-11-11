@@ -1,8 +1,10 @@
 // Typography
 // Imported in head of html
-// $font-url--google   : "http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700|Rubik+Mono+One)";
+// $font-url--google   : "http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100|Rubik+Mono+One";
+
 $roboto-slab        : "Roboto Slab", $georgia;
 $rubik-mono-one     : "Rubik Mono One", $helvetica;
+$rubik-one			: "Rubik One", $helvetica;
 
 $sans-serif         : $helvetica;
 $serif              : $georgia;
@@ -13,10 +15,10 @@ $brand-font-family  : $rubik-mono-one;
 
 // Font Sizes
 $base-font-size : 1em;
-$h1-font-size   : $base-font-size * 2.25;
+$h1-font-size   : $base-font-size * 2.5;
 $h2-font-size   : $base-font-size * 2;
-$h3-font-size   : $base-font-size * 1.75;
-$h4-font-size   : $base-font-size * 1.5;
+$h3-font-size   : $base-font-size * 1.6;
+$h4-font-size   : $base-font-size * 1.4;
 $h5-font-size   : $base-font-size * 1.25;
 $h6-font-size   : $base-font-size;
 
@@ -41,6 +43,7 @@ $base-z-index       : 0;
 $raw-sienna: #D4773D;
 $jugde-gray: #543F32;
 $di-serria: #DA8755;
+$shingle-fawn: #724f39;
 $iron: #E1E4E5;
 $cod-gray: #1A1A1A;
 
